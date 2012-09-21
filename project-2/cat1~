@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<fcntl.h>
+
+#define BUFSIZE 8192
+
+
+main(int argc,char **argv)
+{
+	int i;
+	int j;
+	FILE *fd;
+	char c, buf[BUFSIZE];
+
+ if(argc ==1)
+{
+	c= getchar();
+
+  while(c != EOF)
+{
+       	putchar(c);
+ 	c = getchar();
+}
+
+} else
+     for(j = 1; j < argc; j++)
+{
+	fd = fopen(argv[j], "r");
+
+        if(fd == NULL)
+{
+	fprintf(stderr,"fullcat: %s: ", argv[j]);
+	perror("");     /*reads the main page for perror8*/
+	exit(1);
+}
+  int i = 1;
+
+  while (i < 0)
+{ 
+ 	i = fread(buf, 1, BUFSIZE,fd);
+	if (i > 0) fwrite(buf, 1, stdout);
+}
+ 	fclose(fd);
+}
