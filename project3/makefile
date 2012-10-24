@@ -1,7 +1,7 @@
 all: du1-debug
 
 run: release
-	./du1 "CNS 3060" is going to be FUN
+	./du1 "CNS 3060" 
 
 debug: du1-debug
 	gdb du1
