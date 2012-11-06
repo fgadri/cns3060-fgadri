@@ -1,2 +1,0 @@
-I had a little bit of time to work on the project,because of the break,usually I am always crambling to get the project done because of all the clases i am taking and the due dates of my project falling on the same days.
-	I was able to get ask questions and get help on this project so that helped me a lot and i understanding c++ a little bit more than C.the part that I had a hard time on was how to traverse the disk and be able to print out correct output.I used switch statements in both method but didn't work,so i decided to use if statements and a for loop.
