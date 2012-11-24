@@ -1,0 +1,18 @@
+all: ThreadC-debug
+
+run: release
+	./ThreadC.c
+
+debug: ThreadC-debug
+	gdb ThreadC
+
+release: clean ThreadC
+
+ThreadC-debug: ThreadC.c
+	gcc ThreadC.c -g -o ThreadC
+
+ThreadC: ThreadC.c
+	gcc ThreadC.c -o ThreadC
+
+clean:
+	rm -f ThreadC

@@ -1,0 +1,18 @@
+all: ThreadB-debug
+
+run: release
+	./ThreadB.c
+
+debug: ThreadB-debug
+	gdb ThreadB
+
+release: clean ThreadB
+
+ThreadB-debug: ThreadB.c
+	gcc ThreadB.c -g -o ThreadB
+
+ThreadB: ThreadB.c
+	gcc ThreadB.c -o ThreadB
+
+clean:
+	rm -f ThreadB

@@ -1,0 +1,18 @@
+all: ThreadD-debug
+
+run: release
+	./ThreadD.c
+
+debug: ThreadD-debug
+	gdb ThreadD
+
+release: clean ThreadD
+
+ThreadD-debug: ThreadD.c
+	gcc ThreadD.c -g -o ThreadD
+
+ThreadD: ThreadD.c
+	gcc ThreadD.c -o ThreadD
+
+clean:
+	rm -f ThreadD

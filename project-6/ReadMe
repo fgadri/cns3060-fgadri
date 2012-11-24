@@ -1,0 +1,10 @@
+	Part "a" of the project i realied that the value of the count stayed at zero.
+that is because when the main thread exit all the rest of the code exits,they don't get to execute the function before all the programe closes.
+
+
+	PartB of the programe what i realized is that the execution was very slow,it took a while for the results to show and when it,it only printed counter number 10.One of the reasons why i think it executed low is because of having one thread to wait for the other threads before they output the results.And the race condition is what lead to the unexpected result.
+
+	In partC,taking the sleep out lead to the expected results which is count being 40,this worked perfectly even though Mutex Deadlock was not inplemented.
+
+
+	PartD the Mutex Deadlock was implemented and the sleep was put back in,because of the Mutex Deadlock being implemented and putting th function back to sleep didn't have any side effect and unexpected results to the programe,like it did on partA and partB of the project.
