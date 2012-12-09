@@ -72,7 +72,7 @@ void cpuschedule::Getdata()
 
 	{
 
-		cout<<"Enter The BurstTime for Process p"<<i<<"=	";
+		cout<<"Enter The BurstTime for Process p   "<<i<<"=	";
 
 		cin>>Bu[i];
 
@@ -96,7 +96,7 @@ void cpuschedule::Fcfs()
 
 		B[i]=Bu[i];
 
-		cout<<"Burst time for process p"<<i<<"=	";
+		cout<<"\nBurst time for process p "<<i<< "=	";
 
 		cout<<B[i];
 
@@ -120,9 +120,9 @@ void cpuschedule::Fcfs()
 
 	Awt=Twt/n;
 
-	cout<<"Total   Weighting Time="<<Twt;
+	cout<<"Total   Weighting Time=    \n"<<Twt;
 
-	cout<<"Average Weighting Time="<<Awt<<"";
+	cout<<"Average Weighting Time=    "<<Awt<<"\n";
 
 }
 
@@ -142,7 +142,7 @@ void cpuschedule::Sjf()
 
 		B[i]=Bu[i];
 
-		cout<<"Burst time for process p"<<i<<"=	";
+		cout<<"Burst time for process p  "<<i<<"=	";
 
 		cout<<B[i];
 
@@ -190,9 +190,9 @@ void cpuschedule::Sjf()
 
 	Awt=Twt/n;
 
-	cout<<"Total   Weighting Time="<<Twt;
+	cout<<"Total   Weighting Time=   \n"<<Twt;
 
-	cout<<"Average Weighting Time="<<Awt<<"";
+	cout<<"Average Weighting Time=  "<<Awt<<"\n";
 
 }
 
@@ -218,7 +218,7 @@ void cpuschedule::SjfNp()
 
 		B[i]=Bu[i];
 
-		cout<<"Burst time for process p"<<i<<"=	";
+		cout<<"Burst time for process p  "<<i<<"=	";
 
 		cout<<B[i];
 
@@ -328,9 +328,9 @@ void cpuschedule::SjfNp()
 
 		Awt=Twt/n;
 
-	cout<<"Total   Weighting Time="<<Twt<<"";
+	cout<<"Total   Weighting Time=  "<<Twt<<"\n";
 
-	cout<<"Average Weighting Time="<<Awt<<"";
+	cout<<"Average Weighting Time=  "<<Awt<<"\n";
 
 }
 
@@ -356,11 +356,11 @@ void cpuschedule::Priority()
 
 		B[i]=Bu[i];
 
-		cout<<"Burst time for process p"<<i<<"=	";
+		cout<<"Burst time for process p "<<i<<"=	\n";
 
 		cout<<B[i];
 
-		cout<<"Enter the priority for process P"<<i<<"=	";
+		cout<<"Enter the priority for process P "<<i<<"=	 ";
 
 		cin>>P[i];
 
@@ -408,9 +408,9 @@ void cpuschedule::Priority()
 
 	Awt=Twt/n;
 
-	cout<<"Total   Weighting Time="<<Twt<<"";
+	cout<<"Total   Weighting Time= "<<Twt<<"\n";
 
-	cout<<"Average Weighting Time="<<Awt<<"";
+	cout<<"Average Weighting Time= "<<Awt<<"\n";
 
 }
 
@@ -434,7 +434,7 @@ void cpuschedule::SjfP()
 
 		B[i]=Bu[i];
 
-		cout<<"Burst time for process P"<<i<<"=	"<<B[i];
+		cout<<"Burst time for process P "<<i<<"=	"<<B[i];
 
 		if(B[i]>max)
 
@@ -448,7 +448,7 @@ void cpuschedule::SjfP()
 
 		Tt=Tt+B[i];
 
-		cout<<"Enter the Arrival Time for"<<i<<"th process=	";
+		cout<<"Enter the Arrival Time for "<<i<<"th process=	\n";
 
 		cin>>A[i];
 
@@ -568,7 +568,7 @@ void cpuschedule::SjfP()
 
 	}
 
-	cout<<"Printing remaining burst time";
+	cout<<"Printing remaining burst time .....";
 
 	for(i=1;i<=n;i++)
 
@@ -634,7 +634,7 @@ cout<<"Weight info";
 
 		cout<<"WT["<<i<<"]="<<Wt[i];
 
-cout<<"after subtracting arrival time";
+cout<<"after subtracting arrival time...";
 
 	for(i=1;i<=n;i++)
 
@@ -654,7 +654,7 @@ cout<<"after subtracting arrival time";
 
 	Awt=Twt/n;
 
-	cout<<"Average Weighting Time="<<Awt;
+	cout<<"Average Weighting Time=  \n"<<Awt;
 
 }
 
@@ -678,7 +678,7 @@ void cpuschedule::RoundRobin()
 
 		B[i]=Bu[i];
 
-		cout<<"Burst time for process p"<<i<<"=	";
+		cout<<"Burst time for process p "<<i<<"=	\n";
 
 		cout<<B[i];
 
@@ -690,7 +690,7 @@ void cpuschedule::RoundRobin()
 
 	}
 
-	cout<<"Enter the Time Quantum=";
+	cout<<"Enter the Time Quantum= ";
 
 	cin>>tq;
 
@@ -844,7 +844,7 @@ void cpuschedule::RoundRobin()
 
 	for(i=1;i<=n;i++)
 
-		cout<<"Weighting Time for process P"<<i<<"="<<Wt[i];
+		cout<<"Weighting Time for process P "<<i<<"=  "<<Wt[i];
 
 	//calculating Average Weighting Time
 
@@ -854,9 +854,9 @@ void cpuschedule::RoundRobin()
 
 	Awt=Twt/n;
 
-	cout<<"Total   Weighting Time="<<Twt;
+	cout<<"Total   Weighting Time=  "<<Twt;
 
-	cout<<"Average Weighting Time="<<Awt<<"";
+	cout<<"Average Weighting Time=  "<<Awt<<"";
 
 }
 
