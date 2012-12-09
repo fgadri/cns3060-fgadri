@@ -1,0 +1,1 @@
+I couldn't figure out how to load the data from textfile and it was taking too much time,So i decided to try by inputing the data manually i know it doesn't meet the requirement,but It's worth trying than not trying at all.So hopefully i will get something for my efforts.just keeping my head above water.Thank you,I definetly learned a lot in the class,especially the C language.
